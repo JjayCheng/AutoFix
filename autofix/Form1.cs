@@ -22,12 +22,25 @@ namespace autofix
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             PrinterOperate.GetPrinters(this.label3, this.comboBox2);
-            this.label5.Text = "本机IP：" + NetworkOperate.GetLocalIP();
-            string strServer = @"\\192.168.1.3";
-            string strUserName = "administrator";
-            string strUserPD = "ybsnyyzq";
-            System.Diagnostics.Process.Start("net.exe", "use   \\\\" + strServer + "     /user:\"" + strUserName + "\"   \"" + strUserPD + "\"");
+            if (NetworkOperate.Ping("192.168.1.3"))
+            {
+                this.label6.Text = "● 网络连接正常";
+                this.label6.ForeColor = System.Drawing.Color.ForestGreen;
+                this.label5.Text = "本机IP：" + NetworkOperate.GetLocalIP();
+                string strServer = @"\\192.168.1.3";
+                string strUserName = "administrator";
+                string strUserPD = "ybsnyyzq";
+                System.Diagnostics.Process.Start("net.exe", "use   \\\\" + strServer + "     /user:\"" + strUserName + "\"   \"" + strUserPD + "\"");
+            }
+            else
+            {
+                this.label6.Text = "● 网络连接异常";
+                this.label6.ForeColor = System.Drawing.Color.Crimson;
+                MessageBox.Show("内网已断开连接， 请检查网线以及交换机");
+            }
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -84,6 +97,30 @@ namespace autofix
             MessageBox.Show(message);
             this.progressBar1.Value = 0;
             this.Text = "自助修复工具";
+        }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (NetworkOperate.Ping("192.168.1.3"))
+            {
+                this.label6.Text = "● 网络连接正常";
+                this.label6.ForeColor = System.Drawing.Color.ForestGreen;
+                this.label5.Text = "本机IP：" + NetworkOperate.GetLocalIP();
+                string strServer = @"\\192.168.1.3";
+                string strUserName = "administrator";
+                string strUserPD = "ybsnyyzq";
+                System.Diagnostics.Process.Start("net.exe", "use   \\\\" + strServer + "     /user:\"" + strUserName + "\"   \"" + strUserPD + "\"");
+            }
+            else
+            {
+                this.label6.Text = "● 网络连接异常";
+                this.label6.ForeColor = System.Drawing.Color.Crimson;
+                MessageBox.Show("内网已断开连接， 请检查网线以及交换机");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

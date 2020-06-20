@@ -34,3 +34,15 @@ C:\Users\12149\Desktop\autofix\autofix\obj\Debug\autofix.csproj.CoreCompileInput
 C:\Users\12149\Desktop\autofix\autofix\obj\Debug\autofix.exe
 C:\Users\12149\Desktop\autofix\autofix\obj\Debug\autofix.pdb
 C:\Users\Administrator\Desktop\autofix\autofix\obj\Debug\autofix.csprojAssemblyReference.cache
+D:\Documents\Downloads\autofix\autofix\bin\Debug\autofix.exe.config
+D:\Documents\Downloads\autofix\autofix\bin\Debug\autofix.exe
+D:\Documents\Downloads\autofix\autofix\bin\Debug\autofix.pdb
+D:\Documents\Downloads\autofix\autofix\obj\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Documents\Downloads\autofix\autofix\obj\Debug\autofix.csproj.ResolveComReference.cache
+D:\Documents\Downloads\autofix\autofix\obj\Debug\autofix.Form1.resources
+D:\Documents\Downloads\autofix\autofix\obj\Debug\autofix.Properties.Resources.resources
+D:\Documents\Downloads\autofix\autofix\obj\Debug\autofix.csproj.GenerateResource.cache
+D:\Documents\Downloads\autofix\autofix\obj\Debug\autofix.csproj.CoreCompileInputs.cache
+D:\Documents\Downloads\autofix\autofix\obj\Debug\autofix.exe
+D:\Documents\Downloads\autofix\autofix\obj\Debug\autofix.pdb
+D:\Documents\Downloads\autofix\autofix\obj\Debug\autofix.csprojAssemblyReference.cache
